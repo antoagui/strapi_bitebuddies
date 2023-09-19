@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_tabla_tabla_evaluacions",
+  "info": {
+    "displayName": "tabla_evaluacion",
+    "icon": "restaurant"
+  },
+  "options": {},
+  "attributes": {
+    "Sabor_de_la_comida": {
+      "type": "decimal",
+      "max": 20,
+      "required": true
+    },
+    "ambiente": {
+      "type": "decimal",
+      "max": 15
+    },
+    "servicio": {
+      "type": "decimal",
+      "max": 10
+    },
+    "Opciones_en_el_Menu": {
+      "type": "decimal",
+      "max": 10
+    },
+    "relacion_calidad_precio": {
+      "type": "decimal",
+      "max": 15
+    },
+    "tecnologia": {
+      "type": "decimal",
+      "max": 5
+    },
+    "fotogenico": {
+      "type": "decimal",
+      "max": 15
+    },
+    "delivery": {
+      "type": "decimal",
+      "max": 5
+    },
+    "Espacio": {
+      "type": "decimal",
+      "max": 5
+    }
+  }
+}

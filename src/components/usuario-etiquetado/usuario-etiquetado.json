@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_usuario_etiquetado_usuario_etiquetados",
+  "info": {
+    "displayName": "usuario_etiquetado",
+    "icon": "hashtag",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instagram_user": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

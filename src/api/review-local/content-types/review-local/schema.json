@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_locals",
+  "info": {
+    "singularName": "review-local",
+    "pluralName": "review-locals",
+    "displayName": "review_local",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_local": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "contenido": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich",
+        "maxLengthCharacters": null
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "media_publicacion": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "media_historia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulo_publicacion": {
+      "type": "string",
+      "required": true
+    },
+    "tabla_evaluacion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tabla.tabla-evaluacion"
+    }
+  }
+}
